@@ -10,7 +10,11 @@ var app = new Vue ({
         },
     methods: {
         nomeFunzione: function () {
-            alert('Ciao mi hai Cliccato');
+            if (this.messaggio == 'Ciao Vue!!!') {
+                this.messaggio = 'Ciao ' + prompt('Come ti chiami?');
+            } else {
+                this.messaggio = 'Ciao Vue!!!';
+            }
         }
     }
 });
